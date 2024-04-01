@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Noticia+Text');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+
+html {
+    position:relative;
+    min-height:100%;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #E8E8E8;
+    font-family: 'Lato';
+}
+
+h2 {
+    font-family: 'Roboto Slab';
+    text-align: center;
+    color: #E8E8E8;
+}
+
+h3 {
+    font-family: 'Noticia Text';
+    text-align: left;
+    color: #beccda;
+    font-weight:600
+}
+
+h1,h4,h5 {
+    font-family: 'Noticia Text';
+    text-align: left;
+    color: #E8E8E8;
+    font-weight:600
+}
+
+h6 {
+    font-family: 'Lato';
+    text-align: center;
+    color: #C4C4C4;
+    font-weight: 500;
+    margin: 10px 10px 0px 10px;
+}
+
+p {
+    font-family: 'Lato';
+    text-align: left;
+    color: #E8E8E8;
+}
+
+dd {
+    font-family: 'Roboto Slab';
+    font-size: .9em;
+}
+
+dt {
+    font-family: 'Source Sans Pro';
+    margin: 2px 0px;
+    letter-spacing: 1px;
+}
+
+a {
+    color: #86A0BA;
+}
+
+th {
+    font-family: 'Source Sans Pro';
+    font-weight: normal!important;
+}
+
+input {
+    text-align: center;
+}
+
+select:hover {
+  background-color: #29313d;
+}
+
+input,select {
+    background-color: #333d4d;
+    color: #E8E8E8;
+    border-radius: 4px;
+}
+
+.traits h3,
+.traits h4,
+.rawDiv h3,
+.houseRules h3,
+.points h3 {
+    letter-spacing: 1px;
+}
+
+.ui-tooltip {
+    text-align: center;
+    box-shadow: none!important;
+    padding: 0px;
+    width: 160px;
+}
+
+.ui-tooltip-content {
+    position: relative;
+    font-family: 'Roboto Slab';
+    font-size: 14px;
+    font-weight: 400;
+    color: #E8E8E8;
+    background-color: #47566b;
+    margin: -10px;
+    border-width: 1px!important;
+    border-radius: 5px!important;
+    border-color: #beccda!important;
+    border-style: solid!important;
+    padding: 6px 0px;
+}
+
+.ui-tooltip-content::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #beccda transparent!important;
+}
+
+.container {
+    background-color: #52637a;
+    padding: 20px;
+}
+
+.Title {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.Total {
+    background-color: #64768C!important;
+}
+
+.selection,.TypesTable {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.attributetop>th {
+    border-bottom: 2px solid #E8E8E8;
+}
+
+.attributeodd>td,.attributeeven>td,.sanityRow>td,.honorRow>td {
+    border-bottom: 1px dotted #E8E8E8;
+}
+
+.TypesTable>thead>tr>th {
+    border-bottom: 2px solid #E8E8E8;
+}
+
+.TypesTable>tbody>tr>td {
+    border-bottom: 1px dotted #E8E8E8;
+}
+
+.traits,.raw,.stats,.houseinfo,.houseCenter,.nav {
+    background-color: #47566b;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #12263B;
+}
+
+.calcHead {
+    display: inline-block;
+    padding-right: 32px;
+    margin: 0px;
+    color: #beccda;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    text-align: left;
+}
+
+.rawHead, .houseHead, .menuHead {
+    display: inline-block;
+    padding-right: 32px;
+    margin: 0px;
+    color: #E8E8E8;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    text-align: left;
+}
+
+.saveHead {
+    margin: 0px;
+    color: #E8E8E8;
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    text-align: right;
+}
+
+.saveHead:hover,.rawHead:hover,.houseHead:hover,.calcHead:hover {
+    color: #beccda!important;
+    transition: color 0.3s ease;
+}
+
+.nav input {
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+}
+
+.nav span {
+    display: none;
+}
+
+.nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.navOne,.navTwo,.navThree {
+    text-align: left;
+    float: left;
+}
+
+.navFour {
+    text-align: right;
+    float: right;
+}
+
+.navFive {
+    display: none;
+}
+
+.raceHead {
+    margin: 0px;
+}
+
+.traits>div>dl>dd,.Types>dl>dd,.raw>dd {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.traits>div>dl>dd>span,.Types>dl>dd>span,.raw>dd>span {
+    margin-left: -6px;
+}
+
+@-moz-document url-prefix() {
+    .traits>div>dl>dd>span,.Types>dl>dd>span,.raw>dd>span {
+        margin-left: 2px;
+  }
+}
+
+.attributeodd>td,.sanityRow>td {
+    background-color: #52637a
+}
+
+.Selection {
+    width: 70%;
+    margin-right: 30%;
+}
+
+.rawDiv,.houseRules {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.inputCont>table>tbody>tr>td>input[type=number]::-webkit-outer-spin-button,.inputCont>table>tbody>tr>td>input[type=number]::-webkit-inner-spin-button,.customCost>tbody>tr>td>input[type=number]::-webkit-outer-spin-button,.customCost>tbody>tr>td>input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.inputCont>table>tbody>tr>td>input[type=number],.customCost>tbody>tr>td>input[type=number] {
+    height: 30px;
+    -moz-appearance:textfield;
+    width: 46px;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.1em;
+}
+
+.inputCont>table>tbody>tr>td,.selection>tbody>tr>td,.customCost>tbody>tr>td {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    font-size: 1.1em;
+}
+
+.Reset,.FullReset {
+    margin: 2px;
+    padding: 6px 12px;
+    border-style: outset;
+    border-width: 1px;
+    border-color: #E8E8E8;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.Reset:hover,.FullReset:hover {
+  background-color: #29313d;
+}
+
+.Reset:active,.FullReset:active {
+  background-color: #1f252e;
+}
+
+.inputCont {
+    padding: 0px;
+    margin: 0 auto;
+    width: 72px;
+    text-align: center;
+}
+
+.updown {
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    position: relative;
+}
+
+.downup {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    display: inline-block;
+}
+
+.downup td:nth-child(3n+2) {
+    width: 50px;
+}
+
+.updownCont {
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    width: 16px;
+    height: 30px;
+    top: 0px;
+    left: 0px;
+}
+
+.up {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    margin: 0px;
+    top: 0px;
+    left: 0px;
+    border-style: outset;
+    border-width: 2px;
+    background-color: #333d4d;
+    padding: 0px;
+    background-position: center;
+    background: url('images/uparrow.png') no-repeat;
+  	background-size: contain;
+}
+
+.down {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    margin: 0px;
+    top: 17px;
+    left: 0px;
+    border-style: outset;
+    border-width: 2px;
+    background-color: #333d4d;
+    padding: 0px;
+    background-position: center;
+    background: url('images/downarrow.png') no-repeat;
+    background-size: contain;
+}
+
+.house>dd>div {
+    padding: 0px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.houseCont {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.costCont {
+    width: 58%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.customCost>tbody>tr>td {
+    padding-bottom: 4px;
+}
+
+.customCost {
+    width: 100%;
+}
+
+.costChange {
+    width: 40px!important;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.costChange:not(:nth-child(1)) {
+    padding-left: 20px;
+}
+
+.nav input, .nav span {
+    display: none;
+}
+
+#SubraceTraits>h4 {
+    color: #B8C7D6;
+}
+
+#TotalStr,#TotalDex,#TotalCon,#TotalInt,#TotalWis,#TotalCha {
+    font-weight: bold;
+}
+
+@media screen and (min-width:1px), screen and (min-width:768px) {
+    body {
+        margin: 0px;
+    }
+
+    .container {
+        padding: 20px;
+        border-radius: 0px 0px 10px 10px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #12263B;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    body {
+        margin: 10px 0px 100px 0px;
+    }
+
+    .container {
+        padding: 20px;
+        border-radius: 10px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #12263B;
+        min-width: 709px;
+        max-width: 960px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    body {
+        margin: 10px 0px 100px 0px;
+    }
+
+    .container {
+        padding: 20px;
+        border-radius: 10px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #12263B;
+        min-width: 709px;
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (min-width:1px) and (max-width:767px) {
+    body {
+        margin: 0px;
+    }
+
+    .container {
+        padding: 20px;
+        border-radius: 0px 0px 10px 10px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #12263B;
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    body {
+        margin: 10px 0px 100px 0px;
+    }
+
+    .container {
+        padding: 20px;
+        border-radius: 10px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #12263B;
+        min-width: 709px;
+        max-width: 960px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (min-width:992px) and (max-width:1199px), screen and (min-width:1200px) and (max-width:999999px) {
+    body {
+        margin: 10px 0px 100px 0px;
+    }
+
+    .container {
+        padding: 20px;
+        border-radius: 10px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #12263B;
+        min-width: 709px;
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media
+   only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1366px),
+   only screen and (   min--moz-device-pixel-ratio: 2) and (max-width: 1366px),
+   only screen and (     -o-min-device-pixel-ratio: 2/1) and (max-width: 1366px),
+   only screen and (        min-device-pixel-ratio: 2) and (max-width: 1366px),
+   only screen and (                min-resolution: 192dpi) and (max-width: 1366px),
+   only screen and (                min-resolution: 2dppx) and (max-width: 1366px),
+   only screen and (                         width: 1125px) and (height: 2436px),
+   only screen and (                         width: 2436px) and (height: 1125px) {
+
+     body {
+         margin: 0px;
+     }
+
+     h3,dt,dd {
+         font-size: 75%;
+     }
+
+     td,th,h4 {
+         font-size: 75%!important;
+     }
+
+     select {
+         font-size: .9em;
+     }
+
+     .Types>dt,.Types>dd {
+         font-size: 1em!important;
+     }
+
+     .inputCont>table>tbody>tr>td>input[type=number],.customCost>tbody>tr>td>input[type=number]  {
+         height: 30px;
+         width: 30px;
+         font-size: 1.5em;
+     }
+
+     .costCont>table>tbody>tr>td>input[type=number] {
+         font-size: 75%;
+     }
+
+     .container {
+         border-radius: 0px;
+         border-style:none;
+         border-width: 0px;
+         border-color: #12263B;
+         width: 100%;
+         max-width: 100%;
+         padding: 20px 0px;
+     }
+
+     .traits,.raw,.stats,.houseinfo,.houseCenter,.nav {
+         border-radius: 0px;
+         border-left-width: 0px;
+         border-right-width: 0px;
+         padding: 10px 10px!important;
+     }
+
+     .Reset,.FullReset {
+         margin: 0px;
+         padding: 4px 6px;
+         border-radius: 3px;
+         font-size: .9em;
+     }
+
+     .Selection,.underline {
+         width: 96%;
+         margin-left: 2%;
+         margin-right: 2%;
+     }
+
+     .underline h3,.raceHead {
+         font-size: 1em;
+     }
+
+     .inputCont {
+         width: 60px;
+         font-size: 75%;
+     }
+
+     .stats {
+         padding: 0px!important;
+     }
+
+     .downup {
+         display: inherit;
+     }
+
+     .houseCont, .costCont {
+         width: 100%;
+     }
+
+     .downup td:nth-child(3n+2) {
+         width: 30px;
+     }
+
+     .costChange {
+         padding-left: 6px!important;
+         text-align: right;
+         width: 20px!important;
+     }
+
+     .nav {
+         height: 21px;
+         display: flex;
+     }
+
+     .navFive {
+       display: block;
+     }
+
+     .hamburger {
+       display: block;
+       position: relative;
+
+       z-index: 1;
+
+       -webkit-user-select: none;
+       user-select: none;
+       width: 42px;
+     }
+
+     .hamburger input {
+       display: block;
+       width: 40px;
+       height: 32px;
+       position: absolute;
+       top: -7px;
+       left: -5px;
+
+       cursor: pointer;
+
+       -webkit-touch-callout: none;
+     }
+
+     .hamburger span {
+       display: block;
+       width: 33px;
+       height: 4px;
+       margin-bottom: 5px;
+       position: relative;
+
+       background: #e8e8e8;
+       border-radius: 3px;
+
+       z-index: 1;
+
+       transform-origin: 4px 0px;
+
+       transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                   background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                   opacity 0.55s ease;
+     }
+
+     .hamburger span:first-child {
+       transform-origin: 0% 0%;
+     }
+
+     .hamburger span:nth-last-child(2) {
+       transform-origin: 0% 100%;
+     }
+
+     .hamburger input:checked ~ span {
+       opacity: 1;
+       transform: rotate(45deg) translate(-2px, -1px);
+       position: fixed;
+     }
+
+     .hamburger input:checked ~ span:nth-last-child(3) {
+       opacity: 0;
+       transform: rotate(0deg) scale(0.2, 0.2);
+     }
+
+     .hamburger input:checked ~ span:nth-last-child(2) {
+       transform: rotate(-45deg) translate(0, -1px);
+       position: fixed;
+       top: 101px;
+     }
+
+     .menu {
+       position: fixed;
+       width: 240px;
+       height: 100%;
+       margin: 0 0 0 -10px;
+       padding: 0px;
+       top: 0px;
+
+       background-color: #64768C;
+       border-color: #12263B;
+       border-width: 1px;
+       list-style-type: none;
+       -webkit-font-smoothing: antialiased;
+
+       transform-origin: 0% 0%;
+       transform: translate(-110%, 0);
+
+       transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+     }
+
+     .menu div {
+       display: list-item;
+       float: none;
+       text-align: left;
+       border-width: 1px;
+     }
+
+     .menu div:hover {
+       background: #47566b;
+     }
+
+     .menu h3 {
+       padding: 10px 0;
+       font-size: 22px;
+       text-align: left;
+       margin-left: 50px;
+     }
+
+     .navOne {
+       margin-top: 65px;
+     }
+
+     .navFive h3 {
+       font-size: 22px;
+       text-align: left;
+       position: absolute;
+       top: 79px;
+     }
+
+     .hamburger input:checked ~ div {
+       transform: none;
+     }
+
+     .RacialTraits, .SubraceTraits {
+       width: 96%;
+       margin-left: 2%;
+       margin-right: 2%;
+     }
+ }
+ 
